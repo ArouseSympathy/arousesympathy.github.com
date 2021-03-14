@@ -12,27 +12,27 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "기억을 위한 기록"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+name                     : "JYK"
+description              : "SAMSUNG SDS Developer"
+url                      : "https://arousesympathy.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  :  # the subpath of your site, e.g. "/blog"
+repository               : "arousesympathy/arousesympathy.github.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+masthead_title           : "기억을 위한 기록" # overrides the website title displayed in the masthead, use " " for no title
+# breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "jyk" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -52,8 +52,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -94,11 +94,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "JYK"
+  avatar           : "/assets/images/profile/coffee.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "기억을 위한 기록 공간입니다. <br> 구글신의 가호가 함께하기를.. <br> May the Google be with U"
+  location         : "SEOUL, JAMSIL"
+  email            : "cleankid99@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/arousesympathy"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -122,6 +122,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "cleankid99@naver.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
@@ -129,7 +132,7 @@ footer:
       icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "https://github.com/arousesympathy"
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
@@ -277,6 +280,15 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+      popular: false
+
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
